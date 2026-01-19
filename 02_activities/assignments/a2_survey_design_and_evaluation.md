@@ -40,25 +40,33 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `3`
 
-Describe the purpose of your survey:
 ```
-write your answer here...
+Describe the purpose of your survey: The purpose of my survey is to collect data on music preferences,
+as well as the perception of individuals to popular music across different ages. 
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+target population: If my goal is to study the influence age on music taste then I would probably want my population to include all
+individuals who are not deaf, and include children who can read and write so that they can complete the survey. However, it might not be
+ethical to show certain popular songs to young children as it might include explicit content. 
+Therefore, I would consider targeting individuals over the age of 18 or possibly 12, as it could be interesting to observe if the sort of music they like or where exposed to at a younger age would carry greater influence than their specific age
+
+sampling frame: In an ideal world, maybe I have access to Apple's data or Spotify, so I can use the email each individual used to sign up to the streaming service.
+sampling units: Each individual and I should create a strata for each age group so that I can compare their perceptions of popular music. 
+observational units: The individuals who completed the survey and sent it back.
+
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
+1. Open-ended question - Please provide a list of your top 7 favourite songs
+2. Please select your favourite genre. Provide a list of genres, and then include an option for "other" with a text box. 
+3. Has your favourite genre changed in the last 5 years? If yes, provide a the options with the "other" text box option again. 
+4. Provide a list of the 20 most popular songs indentified by the current top world list in a streaming service. Ask them to select the songs they recognize and to provide a rating between 1 to 5 to indicate how much they like or dislike the song.  
+5. On a scale from 1 to 10, how much do you like the current popular music? 
 6. write your question here... (optional)
 7. write your question here... (optional)
 8. write your question here... (optional)
@@ -71,7 +79,31 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+1. Sample type: Stratified two-stage, systemic sampling from the census.
+2. Sample size: 80,000 individuals
+3. Target population: all persons 15 years of age and older in Canada, excluding residents of the Yukon, Northwest Territories, and Nunavut, full-time residents of institutions, and residents of First Nations reserves
+4. Sampling frame: The individuals who completed the Census but groups are stratified by demographics and volunteer status. 
+5. Survey mode(s): telephone or self-completed an electronic questionnaire
+6. Timeline: From 2023-09-15 to 2024-03-30,
+7. Response rate: The overall response rate was 40.9% (42.2% for the regular sample and 37.1% for the oversample).
+8. Weights: The number of persons represented by a given person in the sample is usually known as the weight or weighting factor. Furthermore, in order to adjust for the 'rejecting' of a proportion of respondents that are not volunteers, the person weight for respondents that are not 'rejected' and are not volunteers is multiplied by a factor. Finally, the weights were adjusted so that the weighted income distribution of 2023 SGVP matched the 2022 Canadian Income Survey (CIS) distribution by province.
+9. Data processing: Data verification was carried out using consistency and flow edits. A series of checks were done to ensure the consistency of the survey data, for example, checking the respondent's reported age against the date of birth coming from the sample file. Flow edits were used to ensure respondents followed the correct path and fix off-path situations.
+
+Most error detection was done through pre-determined edits programmed into the EQ system, which allows for a valid range of codes for each question and built-in edits, and automatically follows the flow of the questionnaire.
+
+Head office performed the same checks as the EQ system as well as more specific validation of edits that are beyond the scope of automated flow and consistency edits. Records with missing or incorrect information were, in a small number of cases, completed, corrected deterministically, or imputed from other information on the questionnaire.
+10. Cleaning, imputation, etc :  all imputations were made using donor imputation. This method uses donor records selected through a score function to impute missing values. Recipient records (records with item or partial non-response) were matched with donor records based on shared characteristics. The donor with the highest score filled in the missing information. If multiple donors had the highest score, one was randomly selected. Mean imputation was used when donor imputation could not be used.
+11. Sources of error: Non-sampling error: Persons without good contact information represent a part of the target population that was excluded from the surveyed population. To the extent that the excluded population differs from the rest of the target population, the results may be biased. In general, since these exclusions are small, one would expect the biases introduced to be small.
+
+Non-response could occur at several stages in this survey. Survey estimates will be adjusted (i.e. weighted) to account for non-response cases. Other types of non-sampling errors can include response errors and processing errors.
+Non-response bias : Dealt with through series of adjustments to the survey weights to account for nonresponse as much as possible. Information was extracted from the frame and used to model and adjust for non-response.
+Coverage error:
+The SGVP 2023 frame was based on the 2021 long-form Census of Population to ensure adequate coverage of groups of interest, such as population groups. The additional socio-demographic questions from the long-form content made it possible to target individuals based on their population group. Coverage was improved (over coverage and under coverage may still exist) if we compare using several linked sources. All respondents in the ten provinces were interviewed by telephone or self-completed an electronic questionnaire. Survey estimates were adjusted (weighted) to represent all persons in the target population, including those not covered by the survey frame.
+Other non-sampling errors: For the 2023 SGVP, significant effort was made to minimize bias by using a well-tested questionnaire, a proven methodology, specialized interviewers and strict quality control.
+12. Limitations, known biases, etc: Although the previously I listed how various sources of bias were addressed by the survey, this does not completely eliminate their influence.
+Additionally, it is possible the the survey suffered from social desirability bias.
+13. Link to documentation and any additional sources used: https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=1526823#a2
+
 ```
 
 ## Rubric
@@ -93,9 +125,9 @@ write your answer here
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-2`.
-- [ ] Ensure that the repository is public.
-- [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
-- [ ] Verify that the link is accessible in a private browser window.
+- [X] Create a branch called `assignment-2`.
+- [X] Ensure that the repository is public.
+- [X] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
+- [X] Verify that the link is accessible in a private browser window.
 
 If you encounter any difficulties or have questions, please don't hesitate to reach out to our team via the help channel in Slack. Our Technical Facilitators and Learning Support staff are here to help you navigate any challenges.
